@@ -17,18 +17,29 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-  ],
+  css: ['~/assets/main.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
   ],
-
+  cli: {
+    badgeMessages: [
+      'Created by :',
+      'Mohammad Amin Pasban',
+      'http://www.maminpasban.ir/'
+    ],
+    bannerColor: 'red'
+  },
   // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
-
+  components: [
+    {
+      path: '~/components',
+      pathPrefix: false
+    }
+  ],
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    'nuxt-animejs',
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/vuetify
@@ -40,9 +51,12 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    '@nuxt/content'
   ],
-
+  content: {
+    // Options
+  },
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
 
@@ -55,9 +69,11 @@ export default {
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
+    treeShake: true,
     customVariables: ['~/assets/variables.scss'],
+    rtl: true,
     theme: {
-      dark: true,
+      dark: false,
       themes: {
         dark: {
           primary: colors.blue.darken2,

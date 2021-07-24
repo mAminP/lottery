@@ -1,0 +1,42 @@
+
+
+@import url('~assets/fonts.css');
+
+@media screen and (max-width: 320px) {
+  body{
+    width: 320px;
+  }
+}
+
+.no-background-hover::before {
+  background-color: transparent !important;
+}
+.v-divider {
+  border-color: rgba(0, 0, 0, 0.04) !important;
+}
+/* html{
+  scroll-behavior: smooth !important;
+} */
+.v-banner__wrapper {
+  border-bottom: 0 !important;
+}
+.v-btn {
+  font-family: 'samim' !important;
+  letter-spacing: 0 !important;
+}
+
+.svg-icon-wraper {
+  stroke: currentColor !important;
+}
+
+.svg-icon {
+  fill: transparent;
+  stroke: currentColor;
+}
+
+.svg-icon-fill {
+  stroke: transparent !important;
+  fill: currentColor !important;
+}
+
+

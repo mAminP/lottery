@@ -2,3 +2,23 @@
 //
 // The variables you want to modify
 // $font-size-root: 20px;
+
+$body-font-family: samim;
+$carousel-controls-bg: rgba(0, 0, 0,.1);
+$carousel-dot-inactive-opacity	:.3 !default;
+
+
+
+// $shadow-key-umbra-opacity: rgba(0,0,0, 0.5);
+// $shadow-key-penumbra-opacity: rgba(0,0,0, 0.9);
+// $shadow-key-ambient-opacity: rgba(0,0,0, 0.9);
+
+  $shadow-key-umbra-opacity: rgba(0,0,0, 0.025);
+  $shadow-key-penumbra-opacity: rgba(0,0,0, 0.009);
+  $shadow-key-ambient-opacity: rgba(0,0,0, 0.009);
+
+$border-radius-root: 0.813rem !default // 13px // // 0.25rem 
+
+// $rounded: (
+//   'lg': 13px
+// );
